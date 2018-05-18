@@ -1,14 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tarea5.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="580.0" prefWidth="778.0" style="-fx-background-color: #6699FF;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1" fx:controller="tarea5.FXMLDocumentController">
     <children>
-        <Button layoutX="126" layoutY="90" text="Click Me!" onAction="#handleButtonAction" fx:id="button" />
-        <Label layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="label" />
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <ImageView fitHeight="137.0" fitWidth="166.0" layoutX="14.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Libre.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="137.0" fitWidth="166.0" layoutX="195.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Ocupada.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="137.0" fitWidth="166.0" layoutX="400.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Reservada.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="137.0" fitWidth="166.0" layoutX="598.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="137.0" fitWidth="166.0" layoutX="14.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="137.0" fitWidth="166.0" layoutX="195.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="137.0" fitWidth="166.0" layoutX="400.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="137.0" fitWidth="166.0" layoutX="598.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true" />
     </children>
 </AnchorPane>
