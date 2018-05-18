@@ -1,11 +1,14 @@
 
 package tarea5;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import org.json.simple.parser.ParseException;
 
 /**
  *
@@ -26,8 +29,9 @@ public class Tarea5 extends Application {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException, FileNotFoundException, ParseException {
         launch(args);
+
     }
     
 }

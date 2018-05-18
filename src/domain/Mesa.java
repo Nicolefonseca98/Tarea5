@@ -13,6 +13,11 @@ public class Mesa {
     public Mesa() {
     }
 
+    public Mesa(String posición, Estado estado) {
+        this.posición = posición;
+        this.estado = estado;
+    }
+
     /**
      * @return the posición
      */
