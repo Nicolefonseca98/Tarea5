@@ -1,5 +1,5 @@
 
-package lógica;
+package restaurant;
 
 /**
  *
