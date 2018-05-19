@@ -2,21 +2,33 @@
 
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
 
 <AnchorPane id="AnchorPane" fx:id="anchorPanePrincipal" prefHeight="580.0" prefWidth="778.0" style="-fx-background-color: #6699FF;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tarea5.FXMLDocumentController">
     <children>
-      <Pane fx:id="mesasPanel" layoutX="15.0" layoutY="14.0" prefHeight="476.0" prefWidth="795.0" style="-fx-background-color: #CC99CC;">
+      <GridPane fx:id="mesasGridPane" layoutX="42.0" layoutY="155.0" prefHeight="271.0" prefWidth="694.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
          <children>
-            <ImageView fx:id="table1ImageView" fitHeight="137.0" fitWidth="166.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" />
-            <ImageView fx:id="table5ImageView" fitHeight="137.0" fitWidth="166.0" layoutX="164.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" />
-            <ImageView fx:id="table2ImageView" fitHeight="137.0" fitWidth="166.0" layoutX="368.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" />
-            <ImageView fx:id="table6ImageView" fitHeight="137.0" fitWidth="166.0" layoutX="534.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" />
-            <ImageView fx:id="table3ImageView" fitHeight="137.0" fitWidth="166.0" layoutX="7.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true" />
-            <ImageView fx:id="table7ImageView" fitHeight="137.0" fitWidth="166.0" layoutX="202.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true" />
-            <ImageView fx:id="table8ImageView" fitHeight="137.0" fitWidth="166.0" layoutX="415.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true" />
-            <ImageView fx:id="table4ImageView" fitHeight="137.0" fitWidth="166.0" layoutX="581.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="table1ImageView" fitHeight="137.0" fitWidth="166.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="table2ImageView" fitHeight="137.0" fitWidth="166.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" />
+            <ImageView fx:id="table3ImageView" fitHeight="137.0" fitWidth="166.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" />
+            <ImageView fx:id="table7ImageView" fitHeight="137.0" fitWidth="166.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <ImageView fx:id="table4ImageView" fitHeight="137.0" fitWidth="166.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" />
+            <ImageView fx:id="table8ImageView" fitHeight="106.0" fitWidth="146.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <ImageView fx:id="table6ImageView" fitHeight="137.0" fitWidth="166.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ImageView fx:id="table5ImageView" fitHeight="137.0" fitWidth="166.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1" />
          </children>
-      </Pane>
+      </GridPane>
     </children>
 </AnchorPane>

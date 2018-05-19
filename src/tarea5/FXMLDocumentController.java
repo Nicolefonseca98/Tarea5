@@ -30,7 +30,7 @@ public class FXMLDocumentController implements Initializable {
     @FXML private ImageView table7ImageView;
     @FXML private ImageView table8ImageView;
     @FXML private AnchorPane anchorPanePrincipal;
-    @FXML private Pane mesasPanel;
+    @FXML private GridPane mesasGridPane;
 
     
     
@@ -79,7 +79,10 @@ public class FXMLDocumentController implements Initializable {
     ImageView table8ImageView = new ImageView();
     table8ImageView.setImage(mesa8);
     
-   mesasPanel.getChildren().addAll(table1ImageView, table2ImageView,table3ImageView,table4ImageView,table5ImageView,table6ImageView,table7ImageView,table8ImageView);
+    GridPane.setConstraints(table1ImageView, 0, 1);
+                mesasGridPane.getChildren().add(table1ImageView);
+    
+   mesasGridPane.getChildren().addAll(table1ImageView, table2ImageView,table3ImageView,table4ImageView,table5ImageView,table6ImageView,table7ImageView,table8ImageView);
     
    
     }    
