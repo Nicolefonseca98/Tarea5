@@ -79,10 +79,31 @@ public class FXMLDocumentController implements Initializable {
     ImageView table8ImageView = new ImageView();
     table8ImageView.setImage(mesa8);
     
-    GridPane.setConstraints(table1ImageView, 0, 1);
+    mesasGridPane.setConstraints(table1ImageView, 0, 0);
                 mesasGridPane.getChildren().add(table1ImageView);
+                
+                 mesasGridPane.setConstraints(table2ImageView, 1, 0 );
+                mesasGridPane.getChildren().add(table2ImageView);
+                
+                 mesasGridPane.setConstraints(table3ImageView, 1, 1);
+                mesasGridPane.getChildren().add(table3ImageView);
+                
+                 mesasGridPane.setConstraints(table4ImageView, 1, 2);
+                mesasGridPane.getChildren().add(table4ImageView);
+                
+                 mesasGridPane.setConstraints(table5ImageView, 0, 1);
+                mesasGridPane.getChildren().add(table5ImageView);
+                
+                 mesasGridPane.setConstraints(table6ImageView, 0, 2);
+                mesasGridPane.getChildren().add(table6ImageView);
+                
+                 mesasGridPane.setConstraints(table7ImageView, 0, 3);
+                mesasGridPane.getChildren().add(table7ImageView);
+                
+                 mesasGridPane.setConstraints(table8ImageView, 0, 4);
+                mesasGridPane.getChildren().add(table8ImageView);
     
-   mesasGridPane.getChildren().addAll(table1ImageView, table2ImageView,table3ImageView,table4ImageView,table5ImageView,table6ImageView,table7ImageView,table8ImageView);
+//   mesasGridPane.getChildren().addAll(table1ImageView, table2ImageView,table3ImageView,table4ImageView,table5ImageView,table6ImageView,table7ImageView,table8ImageView);
     
    
     }    
