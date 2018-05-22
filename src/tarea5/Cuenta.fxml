@@ -7,11 +7,10 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="552.0" prefWidth="496.0" style="-fx-background-color: #6699FF;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1" fx:controller="tarea5.CuentaController">
+<AnchorPane id="AnchorPane" prefHeight="552.0" prefWidth="496.0" style="-fx-background-color: #6699FF;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tarea5.CuentaController">
    <children>
       <Label layoutX="38.0" layoutY="38.0" prefHeight="17.0" prefWidth="43.0" text="Menú:" />
-      <TextField layoutX="38.0" layoutY="55.0" prefHeight="25.0" prefWidth="177.0" />
+      <TextField fx:id="textFieldMenu" layoutX="38.0" layoutY="55.0" prefHeight="25.0" prefWidth="177.0" />
       <TableView layoutX="38.0" layoutY="98.0" prefHeight="337.0" prefWidth="293.0">
         <columns>
           <TableColumn prefWidth="188.0" text="Producto" />
