@@ -14,6 +14,12 @@
         "Name": "Nachos",
         "Price": "1500"
     }, {
+        "Name": "Empanada",
+        "Price": "700"
+    }, {
+        "Name": "Chalupa",
+        "Price": "2000"
+    }, {
         "Name": "Coca Cola",
         "Price": "900"
     }, {
@@ -23,19 +29,13 @@
         "Name": "Coca Cola Zero",
         "Price": "800"
     }, {
-       "Name": "Té Frío",
+       "Name": "Te Frio",
         "Price": "1000"
     }, {
         "Name": "Helado",
         "Price": "1500"
     }, {
-        "Name": "Pie de limón",
+        "Name": "Pie de limon",
         "Price": "1700"
  
-    }, {
-        "Name": "Hamburquesa",
-        "Price": "1200"
-    }, {
-        "Name": "Hamburquesa",
-        "Price": "1200"
     }]

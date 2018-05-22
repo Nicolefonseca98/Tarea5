@@ -4,18 +4,22 @@ package tarea5;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
+import javafx.scene.control.Menu;
 import javafx.scene.image.ImageView;
 import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
+import lógica.AdministradorArchivos;
 import org.json.simple.parser.ParseException;
 
 /**
@@ -35,11 +39,15 @@ public class FXMLDocumentController implements Initializable {
     @FXML private ImageView table8ImageView;
     @FXML private AnchorPane anchorPanePrincipal;
     @FXML private GridPane mesasGridPane;
+
     
     @FXML
     private void handleButtonAction(ActionEvent event) {
         
     }
+    
+  
+     
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
