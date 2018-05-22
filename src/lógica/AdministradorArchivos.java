@@ -27,10 +27,11 @@ public class AdministradorArchivos {
         for (int i = 0; i < jsonArray.size(); i++) {
             Mesa mesa = new Mesa();
             JSONObject jsonObject = (JSONObject) jsonArray.get(i);
-            mesa.setEstado((Estado) jsonObject.get("estado"));
+            mesa.setEstado(Estado.valueOf(jsonObject.get("estado").toString()));
             mesa.setPosición(jsonObject.get("posicion").toString());
             listaMesas.add(mesa);
         }
+        System.out.println(listaMesas.toString());
         return listaMesas;
     }
   
