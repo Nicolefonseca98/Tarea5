@@ -5,13 +5,22 @@
  */
 package tarea5;
 
+import domain.Estado;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.event.EventHandler;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
+import javafx.stage.Stage;
+import lógica.SujetoObservable;
 import org.json.simple.parser.ParseException;
 
 /**
@@ -20,7 +29,8 @@ import org.json.simple.parser.ParseException;
  */
 public class Logica {
     
-ImageView[][] matrizImageView;
+    ImageView[][] matrizImageView;
+    SujetoObservable sujetoObservable = new SujetoObservable();
 
     public GridPane dibujaMesas(GridPane gridPane) throws IOException, FileNotFoundException, ParseException {
  
@@ -44,20 +54,55 @@ ImageView[][] matrizImageView;
         return gridPane;
     }
     
+    int estado = 0;
+
     public void detectaClickMapa(GridPane gridPane) {
-  
-        for (int i = 0 ; i < matrizImageView.length ; i++) {
-            for (int j = 0 ; j < matrizImageView[0].length ; j++) {
-             int auxI = i;
-                int auxJ = j;    
+
+        for (int i = 0; i < matrizImageView.length; i++) {
+            for (int j = 0; j < matrizImageView[0].length; j++) {
+                int auxI = i;
+                int auxJ = j;
+
                 matrizImageView[i][j].setOnMouseClicked(new EventHandler<MouseEvent>() {
                     @Override
-                    public void handle(MouseEvent event) { 
-                        System.out.println("mesa en la posición " + auxI +" "+ auxJ);
-                        
+                    public void handle(MouseEvent event) {
+                        if (event.getButton() == MouseButton.PRIMARY && event.getClickCount() == 3) {
+                            Image matrizImages[][] = new Image[2][4];
+                            try {
+                                matrizImages[auxI][auxJ] = new Image(sujetoObservable.notificar(Estado.VACÍA));
+                                estado++;
+                                matrizImageView[auxI][auxJ].setImage(matrizImages[auxI][auxJ]);
+                                Stage stage = new Stage();
+                                Parent root = FXMLLoader.load(getClass().getResource("Cliente.fxml"));
+                                Scene scene = new Scene(root);
+                                stage.setScene(scene);
+                                stage.show();
+                            } catch (IOException ex) {
+                                Logger.getLogger(Logica.class.getName()).log(Level.SEVERE, null, ex);
+                            } catch (ParseException ex) {
+                                Logger.getLogger(Logica.class.getName()).log(Level.SEVERE, null, ex);
+                            }
+                        } else if (event.getButton() == MouseButton.PRIMARY && event.getClickCount() == 2) {
+                             Image matrizImages[][] = new Image[2][4];
+                            try {
+                                matrizImages[auxI][auxJ] = new Image(sujetoObservable.notificar(Estado.OCUPADA));
+                                System.out.println(sujetoObservable.notificar(Estado.OCUPADA));
+                                matrizImageView[auxI][auxJ].setImage(matrizImages[auxI][auxJ]);
+                                Stage stage = new Stage();
+                                Parent root = FXMLLoader.load(getClass().getResource("Cuenta.fxml"));
+                                Scene scene = new Scene(root);
+                                stage.setScene(scene);
+                                stage.show();
+                            } catch (IOException ex) {
+                                Logger.getLogger(Logica.class.getName()).log(Level.SEVERE, null, ex);
+                            } catch (ParseException ex) {
+                                Logger.getLogger(Logica.class.getName()).log(Level.SEVERE, null, ex);
+                            }
+                        }
                     }
-                });            
+                });
             }
-        }               
+
+        }
     }
 }

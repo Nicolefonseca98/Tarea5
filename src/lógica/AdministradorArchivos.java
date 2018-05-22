@@ -5,7 +5,6 @@ import domain.Estado;
 import domain.Mesa;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import org.json.simple.JSONArray;
@@ -27,6 +26,7 @@ public class AdministradorArchivos {
         for (int i = 0; i < jsonArray.size(); i++) {
             Mesa mesa = new Mesa();
             JSONObject jsonObject = (JSONObject) jsonArray.get(i);
+            mesa.setEstado(Estado.valueOf(jsonObject.get("Estado").toString()));
             mesa.setNumeroMesa(Integer.valueOf((jsonObject.get("Numero").toString())));
             mesa.setPosición(jsonObject.get("Posicion").toString());
             listaMesas.add(mesa);

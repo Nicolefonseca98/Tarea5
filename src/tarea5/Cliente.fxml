@@ -5,14 +5,13 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #6699FF;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1" fx:controller="tarea5.ClienteController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #6699FF;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tarea5.ClienteController">
    <children>
       <Label layoutX="49.0" layoutY="68.0" text="Cliente:" />
       <Label layoutX="49.0" layoutY="183.0" text="Teléfono:" />
-      <TextField layoutX="49.0" layoutY="100.0" prefHeight="25.0" prefWidth="217.0" />
-      <TextField layoutX="49.0" layoutY="229.0" prefHeight="25.0" prefWidth="217.0" />
-      <Button layoutX="204.0" layoutY="270.0" mnemonicParsing="false" text="Reservar" />
+      <TextField fx:id="textFieldCliente" layoutX="49.0" layoutY="100.0" prefHeight="25.0" prefWidth="217.0" />
+      <TextField fx:id="textFieldTelefono" layoutX="49.0" layoutY="229.0" prefHeight="25.0" prefWidth="217.0" />
+      <Button layoutX="204.0" layoutY="270.0" mnemonicParsing="false" onAction="#buttonReservar" text="Reservar" />
       <Button layoutX="529.0" layoutY="361.0" mnemonicParsing="false" text="Volver" />
    </children>
 </AnchorPane>

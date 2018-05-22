@@ -44,6 +44,11 @@ public class Cliente {
     public void setTeléfono(String teléfono) {
         this.teléfono = teléfono;
     }
+
+    @Override
+    public String toString() {
+        return "Cliente{" + "nombre=" + nombre + ", tel\u00e9fono=" + teléfono + '}';
+    }
     
     
 }

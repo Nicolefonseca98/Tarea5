@@ -27,11 +27,11 @@ public class SujetoObservable {
                     //Cambiar a reservada, datos del cliente
                     break;
                 case RESERVADA:
-                    url = "images/Libre.png";
+                    url = "/images/Libre.png";
                     //Cancelar la reservación
                     break;
-                default:
-                    url = "images/Ocupada.png";
+                case OCUPADA:
+                    url = "/images/Ocupada.png";
                     //Si está ocupada agregar platillos
                     break;
             }

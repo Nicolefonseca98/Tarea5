@@ -1,25 +1,33 @@
 [{
         "Numero": 1,
-        "Posicion": "0,0"
+        "Posicion": "0,0",
+        "Estado": "VACÍA"
     }, {
         "Numero": 2,
-        "Posicion": "1,0"
+        "Posicion": "1,0",
+        "Estado": "VACÍA"
     }, {
         "Numero": 3,
-        "Posicion": "2,0"
+        "Posicion": "2,0",
+        "Estado": "VACÍA"
     }, {
         "Numero": 4,
-        "Posicion": "3,0"
+        "Posicion": "3,0",
+        "Estado": "VACÍA"
     }, {
         "Numero": 5,
-        "Posicion": "0,1"
+        "Posicion": "0,1",
+        "Estado": "VACÍA"
     }, {
         "Numero": 6,
-        "Posicion": "1,1"
+        "Posicion": "1,1",
+        "Estado": "VACÍA"
     }, {
         "Numero": 7,
-        "Posicion": "2,1"
+        "Posicion": "2,1",
+        "Estado": "VACÍA"
     }, {
         "Numero": 8,
-        "Posicion": "3,1"
+        "Posicion": "3,1",
+        "Estado": "VACÍA"
     }]
