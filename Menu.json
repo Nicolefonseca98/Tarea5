@@ -1,0 +1,41 @@
+[{
+        "Name": "Hamburguesa",
+        "Price": "1200"
+    }, {
+        "Name": "Papas fritas",
+        "Price": "1000"
+    }, {
+        "Name": "Tacos",
+        "Price": "1300"
+    }, {
+        "Name": "Sandwich",
+        "Price": "1450"
+    }, {
+        "Name": "Nachos",
+        "Price": "1500"
+    }, {
+        "Name": "Coca Cola",
+        "Price": "900"
+    }, {
+      "Name": "Fanta Naranja",
+        "Price": "900"
+    }, {
+        "Name": "Coca Cola Zero",
+        "Price": "800"
+    }, {
+       "Name": "Té Frío",
+        "Price": "1000"
+    }, {
+        "Name": "Helado",
+        "Price": "1500"
+    }, {
+        "Name": "Pie de limón",
+        "Price": "1700"
+ 
+    }, {
+        "Name": "Hamburquesa",
+        "Price": "1200"
+    }, {
+        "Name": "Hamburquesa",
+        "Price": "1200"
+    }]
