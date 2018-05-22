@@ -35,17 +35,10 @@ public class FXMLDocumentController implements Initializable {
     @FXML private ImageView table8ImageView;
     @FXML private AnchorPane anchorPanePrincipal;
     @FXML private GridPane mesasGridPane;
-
-    
-    
-    
-    
-    
-   
     
     @FXML
     private void handleButtonAction(ActionEvent event) {
-     
+        
     }
     
     @Override
@@ -53,6 +46,12 @@ public class FXMLDocumentController implements Initializable {
         Logica logica = new Logica();
         try {
             logica.dibujaMesas(mesasGridPane);
+            } catch (IOException ex) {
+            Logger.getLogger(FXMLDocumentController.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (ParseException ex) {
+            Logger.getLogger(FXMLDocumentController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        logica.detectaClickMapa(mesasGridPane);
 //    Image mesa1 = new Image("images/Libre.png");
 //    ImageView table1ImageView = new ImageView();
 //    table1ImageView.setImage(mesa1);
@@ -110,11 +109,7 @@ public class FXMLDocumentController implements Initializable {
 //                mesasGridPane.getChildren().add(table8ImageView);
     
 //   mesasGridPane.getChildren().addAll(table1ImageView, table2ImageView,table3ImageView,table4ImageView,table5ImageView,table6ImageView,table7ImageView,table8ImageView);
-        } catch (IOException ex) {
-            Logger.getLogger(FXMLDocumentController.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (ParseException ex) {
-            Logger.getLogger(FXMLDocumentController.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        
     
    
     }    

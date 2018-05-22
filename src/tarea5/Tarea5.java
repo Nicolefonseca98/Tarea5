@@ -8,7 +8,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import lógica.AdministradorArchivos;
 import org.json.simple.parser.ParseException;
 
 /**
@@ -32,8 +31,6 @@ public class Tarea5 extends Application {
      */
     public static void main(String[] args) throws IOException, FileNotFoundException, ParseException {
         launch(args);
-        AdministradorArchivos a = new AdministradorArchivos();
-        a.leerArchivoMesa();
     }
     
 }
