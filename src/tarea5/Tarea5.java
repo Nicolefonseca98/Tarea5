@@ -30,7 +30,10 @@ public class Tarea5 extends Application {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws IOException, FileNotFoundException, ParseException {
-        launch(args);
+//        launch(args);
+        MesaTiempo pt = new MesaTiempo();
+        pt.beepForAnHour();
+
 //        AdministradorArchivos a = new AdministradorArchivos();
 //        a.leerArchivoMenu();
     }
